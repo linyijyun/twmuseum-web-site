@@ -1,0 +1,199 @@
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji", "Microsoft JHengHei";
+    background-color:  #F4D06F;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-caption {
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.obj-fit {
+    object-fit: cover;
+    object-position: center;
+}
+
+.hr-white{
+    width: 100%;
+    background: white;
+}
+
+.indeximg {
+    height: 300px;
+}
+
+@media (max-width:768px){
+    .indeximg{
+        order: 1;
+    }
+    .indextext{
+        order: 2;
+    }
+
+    .table-rwd .tr-hide{
+        display: none;
+    }
+
+    .table-rwd td:not(.dataTables_empty):before {
+        content: attr(data-th) ": ";
+        color: red;
+        font-weight: bold;
+    }
+
+    .table-rwd td{
+        display: block;
+        border: 0;
+    }
+
+    .table-rwd tr{
+        border: 1px solid black;
+        display: block;
+    }
+
+    #sv{
+        margin-top:100px;
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width:768px) {
+    #sv{
+        margin-top:250px;
+    }
+}
+
+#loading {
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1029;
+    position:fixed;
+    left: 0;
+    right: 0;
+  
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+#content, #footer{
+    display: none;
+}
+
+.dataTables_wrapper label{
+    color: #fff;
+}
+
+#page {
+    /* 100vh - nav - footer height - #page margin bottom - nav和page的間距 */
+    min-height: calc(100vh - 56px - 64px - 64px - (70px - 56px));
+}
+
+.card-img-top {
+    height: 200px;
+}
+
+.card-body {
+    height: 150px;
+    overflow-y: auto;
+}
+
+#abc {
+    height: 400px;
+    width: 400px;
+    margin-top: 10px;
+    z-index: 9999;
+}
+
+#ddd {
+    z-index: 9999;
+    font-family:"Microsoft JhengHei"; 
+   
+}
+
+#tht{  
+    color:green;
+    font-size: 15px;
+    margin-bottom: 80px;
+}
+
+#rightblock{
+    height: 400px;
+    width: 400px;
+    z-index: 9999;
+    border-radius: 5%;
+}
+
+
+
+
+#particles-js {
+    background-color: #F4D06F;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+    z-index:-1;
+  }
+
+#chart {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    
+}
+
+.tt{
+    position: absolute;
+    width:450px;
+    height:20px;
+    left:420px;
+    top: 10px;
+
+}
+
+
+
+.nav-link:hover{
+    color: #F95E28 !important; /* 當滑鼠經過時，超連結文字顏色變成桃紅色 */
+
+    position: relative; /* 當滑鼠經過超連結時，超連結往右下位移1像素 */
+    
+    top: 2px;
+    
+    left: 2px;
+    
+    }
+
+.aa {
+   z-index: 9999;
+   width: 300px;
+   height: 30px;
+   position: absolute;
+   left: 44%;
+   top: 100px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
