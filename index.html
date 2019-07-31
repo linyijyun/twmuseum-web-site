@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144500554-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-144500554-1');
+</script>
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>來去台灣博物館</title>
+
+    <!-- FAVIOCN -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <!-- 網站META -->
+    <!-- 說明最好要設，讓Google搜尋能抓到網站說明 -->
+    <meta name="keywords" content="台灣博物館,文物館,歷史收藏">
+    <meta name="description" content="台灣博物館介紹網">
+    <meta name="author" content="LIN-YI-JYUN">
+
+    <!-- FACEBOOK META -->
+    <meta property="og:title" content="台灣博物館">
+    <meta property="og:image" content="./img/Geography_03.jpg">
+    <meta property="og:description" content="台灣博物館介紹網">
+    <meta property="og:site_name" content="台灣博物館">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/coffee.css">
+    <link rel="stylesheet" href="./css/animate.css">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+    <div id="particles-js"></div>
+    <script src="./particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particlesjs-config.json', function() {});
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/LOGO.png" width="190" height="45" class="d-inline-block align-top" alt="">
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">
+                            <i class="fas fa-home"></i>  台灣知名博物館
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./land.php" style="color:#000">
+                            <i class="fas fa-hotel"></i>  全台博物館資訊
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./map.php" style="color:#000">
+                            <i class="fas fa-hotel"></i>  各縣市代表博物館介紹
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="./chart.html" style="color:#000">
+                                <i class="far fa-copy"></i>  全台博物館分布數
+                            </a>
+                        </li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="page">
+        <div class="container-fluid" id="loading">
+            <div class="row h-100">
+                <div class="col-12 text-center align-self-center">
+                    <img src="./img/loading-coffee.svg" alt="" width="300" height="300">
+                    <p class="text-white">載入中...</p>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="content"  style="margin-top: 100px;  margin-bottom:64px;">
+            <!-- 圖片輪播區 -->
+            <div class="row">
+                <div class="col-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/Coffee-goods_17.jpg" class="d-block w-100 h-100 obj-fit" alt="">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>國立故宮博物院</h5>
+                                    <p>台灣最具代表性博物館</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/banner-image_01.jpg" class="d-block w-100 h-100 obj-fit" alt="">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>奇美博物館</h5>
+                                    <p>一座為大眾而生的博物館</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/dongshan-cafe_01.jpg" class="d-block w-100 h-100 obj-fit" alt="">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>宜蘭蘭陽博物館</h5>
+                                    <p>一座與大地共生的建築</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/dongshan-cafe_03.jpg" class="d-block w-100 h-100 obj-fit" alt="">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>國立自然科學博物館</h5>
+                                    <p>包含六個場館的綜合展場</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 簡介區 -->
+            <div class="row mt-5">
+                <div class="col-12 text-center text-block rubberBand wow ">
+                    <img src="./img/banner-01.png" style="width:1110px;height:270px">
+                    
+                    <img src="./img/line-01.png" style="width:1110px;height:8px">
+                </img>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-5 my-3 indeximg slideInLeft wow">
+                    <img src="./img/11.jpg" alt="" class="w-100 h-100 obj-fit">
+                </div>
+                <div class="col-12 col-md-7 my-3 text-block align-self-center indextext slideInRight wow">
+                    <h1>故宮博物院</h1>
+                    <p>
+                            故宮文物因緣際會來到臺灣，成為台灣多元文化源流極重要的一部分。回溯歷史，其承繼數千年中國文化之珍稀，肩負開物成務的重大使命。國立故宮博物院庋藏文物，原屬中央博物院籌備處者，多係古物陳列所舊藏，為熱河、瀋陽行宮所有。今日國立故宮博物院典藏主體，實匯集北平、熱河、瀋陽三處清宮之文物。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-7 my-3 text-block align-self-center text-md-right indextext slideInLeft wow">
+                    <h1>奇美博物館</h1>
+                    <p>
+                            位於臺灣臺南市仁德區，為奇美實業創辦人許文龍創立，是臺灣館藏最豐富的私人博物館、美術館。以典藏西洋藝術品為主，展出藝術、樂器、兵器與自然史四大領域。樂器領域，擁有全球數量最多小提琴收藏，其中包含世界各大製琴師名作。藝術方面，典藏台灣最完整西方繪畫雕塑，目標為建構出基礎西洋藝術史脈絡。兵器領域，展示亞洲最完整之各國珍貴古兵器，透過戰爭兵器呈現歷史與科技演進史。自然史領域，擁有亞洲最大動物標本收藏，範圍涵蓋五大洲哺乳類及鳥類。
+                    </p>
+                </div>
+                <div class="col-12 col-md-5 my-3 indeximg slideInRight wow">
+                    <img src="./img/22.jpg" alt="" class="w-100 h-100 obj-fit">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-5 my-3 indeximg slideInLeft wow">
+                    <img src="./img/33.jpg" alt="" class="w-100 h-100 obj-fit">
+                </div>
+                <div class="col-12 col-md-7 my-3 text-block align-self-center indextext slideInRight wow">
+                    <h1>國立海洋生物博物館</h1>
+                    <p>
+                            簡稱海生館，位於臺灣屏東縣車城鄉，地處墾丁國家公園西北角龜山山麓的臨海地區，是以海洋生物為主題的大型博物館。此館占地約有96.81公頃，1991年籌備成立，於2000年2月25日開放。其公共工程建設曾獲得美國工程顧問協會頒發的2001年「美國國家工程傑出獎」首獎。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-12 col-md-7 my-3 text-block align-self-center text-md-right indextext slideInLeft wow">
+                        <h1>北投溫泉博物館</h1>
+                        <p>
+                                該館現已列為臺北市三級古蹟。館內規劃有一樓二樓展區，以北投溫泉發展史為主題，從溫泉的原理、北投石、火山（一樓展場）到後期北投溫泉鄉發展史、凱達格蘭族歷史「北投社原住民」、北投產業和台灣好萊塢等規劃（二樓展場）。目前館內參觀人數有限制，同時不得超過一百人在館內參觀，入館也必須更換拖鞋。戶外由於草坪優美，景觀典雅，常可見到即將結婚的新人在此拍攝婚紗照。溫泉博物館館內最珍貴的眾多北投石，全部由許陽明出面向中華礦石協會，特別是陳嘉林理事長，還有諸多礦石收藏家商量，呼籲「讓北投石回家」時，紛紛捐出讓許陽明一起交由溫泉博物館收藏的珍貴國寶。
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-5 my-3 indeximg slideInRight wow">
+                        <img src="./img/44.jpg" alt="" class="w-100 h-100 obj-fit">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-5 my-3 indeximg slideInLeft wow">
+                        <img src="./img/55.jpg" alt="" class="w-100 h-100 obj-fit">
+                    </div>
+                    <div class="col-12 col-md-7 my-3 text-block align-self-center indextext slideInRight wow">
+                        <h1>美濃客家文物館</h1>
+                        <p>
+                                美濃地區為南部客家人主要之聚居地，全鎮百分之九十以上屬客家籍人口，並通用客家語言，加上地形獨立及親族觀念濃厚等因素，使得美濃在語言、衣飾、美食、屋宅建築、音樂等人文方面，仍保存傳統客家風俗與生活方式；然在反水庫運動過程中，因凝聚濃厚愛鄉情感，故於民國90年設立「美濃客家文物館」，將美濃客家文化以故事性程現為主題，營造一座具美濃客家地方特色的文物館。
+                        </p>
+                    </div>
+                </div>
+
+            
+
+        </div>
+    </div>
+    <div class="container-fluid bg-warning" id="footer">
+        <div class="row justify-content-center">
+            <div class="col-12 text-white text-center">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+                &copy;<script>let d = new Date; document.write(d.getFullYear());</script>台灣博物館介紹網
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+  
+
+    <script>
+        $(document).on("readystatechange", function(){
+            if(document.readyState == "complete"){
+                $("#loading").fadeOut(2000, function(){
+                    $("#content").fadeIn(1000);
+                    $("#footer").fadeIn(1000);
+
+                    new WOW().init();
+                });
+            }
+        })
+
+        
+         	
+        $('.counter-demo-1').lemCounter({
+        value_to: 100
+         });	
+			
+			
+    </script>
+</body>
+
+</html>
